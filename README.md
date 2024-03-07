@@ -22,7 +22,8 @@ Prepare a `./data` directory that contains all images of the datasets:
 
 ## Experiment
 
-- Train and test the CBM with align loss:
+Train and test the CBM with `loss_align`:
+  
   `python train_test.py --lamda 1 --backbone vgg16 --classifier linear`
 
 - `--lamda 0` is the baseline without loss_align, `lamda` can be larger than 1. 
