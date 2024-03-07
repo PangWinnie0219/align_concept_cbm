@@ -18,7 +18,10 @@ Prepare a `./data` directory that contains all images of the datasets:
             - TestA
         - scirep
             - test_crop
+        - fitz_images
+        - ddi_images
     ```
+You may download the data from [PBC dataset](https://data.mendeley.com/datasets/snkd93bnjr/1), [RaabinWBC](https://raabindata.com/free-data/), [scirep](https://www.nature.com/articles/s41598-023-29331-3), [Fitzpatrick 17k](https://github.com/mattgroh/fitzpatrick17k), [DDI](https://ddi-dataset.github.io/index.html#paper) and concept annotations from [WBCAtt](https://rose1.ntu.edu.sg/dataset/WBCAtt/), [SkinCon](https://skincon-dataset.github.io/index.html#dataset).  
 
 ## Experiment
 
