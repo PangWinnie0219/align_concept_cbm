@@ -1,0 +1,6 @@
+label:
+  Basophil: 0
+  Eosinophil: 1
+  Lymphocyte: 2
+  Monocyte: 3
+  Neutrophil: 4

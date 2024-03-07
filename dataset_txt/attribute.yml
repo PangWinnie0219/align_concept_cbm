@@ -1,0 +1,42 @@
+cell_size:
+  big: 0
+  small: 1
+cell_shape:
+  irregular: 0
+  round: 1
+nucleus_shape:
+  irregular: 0
+  segmented-bilobed: 1
+  segmented-multilobed: 2
+  unsegmented-band: 3
+  unsegmented-indented: 4
+  unsegmented-round: 5
+nuclear_cytoplasmic_ratio:
+  high: 0
+  low: 1
+chromatin_density:
+  densely: 0
+  loosely: 1
+cytoplasm_vacuole:
+  'no': 0
+  'yes': 1
+cytoplasm_texture:
+  clear: 0
+  frosted: 1
+cytoplasm_colour:
+  blue: 0
+  light blue: 1
+  purple blue: 2
+granule_type:
+  coarse: 0
+  nil: 1
+  round: 2
+  small: 3
+granule_colour:
+  nil: 0
+  pink: 1
+  purple: 2
+  red: 3
+granularity:
+  'no': 0
+  'yes': 1

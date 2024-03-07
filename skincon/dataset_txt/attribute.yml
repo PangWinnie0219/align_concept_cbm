@@ -1,0 +1,66 @@
+atrophy:
+  'no': 0
+  'yes': 1
+black:
+  'no': 0
+  'yes': 1
+brown(hyperpigmentation):
+  'no': 0
+  'yes': 1
+bulla:
+  'no': 0
+  'yes': 1
+crust:
+  'no': 0
+  'yes': 1
+dome-shaped:
+  'no': 0
+  'yes': 1
+erosion:
+  'no': 0
+  'yes': 1
+erythema:
+  'no': 0
+  'yes': 1
+exudate:
+  'no': 0
+  'yes': 1
+friable:
+  'no': 0
+  'yes': 1
+nodule:
+  'no': 0
+  'yes': 1
+papule:
+  'no': 0
+  'yes': 1
+patch:
+  'no': 0
+  'yes': 1
+plaque:
+  'no': 0
+  'yes': 1
+purple:
+  'no': 0
+  'yes': 1
+pustule:
+  'no': 0
+  'yes': 1
+scale:
+  'no': 0
+  'yes': 1
+scar:
+  'no': 0
+  'yes': 1
+telangiectasia:
+  'no': 0
+  'yes': 1
+ulcer:
+  'no': 0
+  'yes': 1
+white(hypopigmentation):
+  'no': 0
+  'yes': 1
+yellow:
+  'no': 0
+  'yes': 1

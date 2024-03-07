@@ -1,0 +1,6 @@
+Unnamed: 0,cell_size,cell_shape,nucleus_shape,nuclear_cytoplasmic_ratio,chromatin_density,cytoplasm_vacuole,cytoplasm_texture,cytoplasm_colour,granule_type,granule_colour,granularity
+Basophil,0,2,2,1,2,0,1,0,2,2,0
+Eosinophil,2,1,1,1,1,2,2,2,0,2,0
+Lymphocyte,2,1,2,1,0,1,1,2,1,1,0
+Monocyte,0,2,2,1,0,1,2,2,2,1,0
+Neutrophil,1,2,2,1,2,1,0,2,2,2,0
