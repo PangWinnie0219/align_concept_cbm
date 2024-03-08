@@ -1,27 +1,22 @@
-from torch import nn
-import pandas as pd
-import sklearn.metrics
 import os
-import pandas as pd
-import torch
-import os
-import torch
-import numpy as np
-import argparse
 import json
-import random
+import argparse
+import time
+import pandas as pd
+import numpy as np
+import torch
+from torch import nn
+from datetime import datetime
+import sklearn.metrics
+
+from sklearn.metrics import f1_score, accuracy_score
+from tqdm.auto import tqdm
+from torch.utils.data import Dataset
+from torch.utils.data import DataLoader
+from torch.optim.lr_scheduler import CosineAnnealingLR, StepLR
 
 from utils import utils
 from utils import utils_torch
-
-from sklearn.metrics import f1_score, accuracy_score
-
-from torch.utils.data import Dataset
-from torchvision.datasets.folder import default_loader
-from torch.utils.data import DataLoader
-from tqdm.auto import tqdm
-from torch.optim.lr_scheduler import CosineAnnealingLR, StepLR
-
 from utils.utils_torch import get_transforms
 from dataset.att_label_dataset import AttLabelDataset
 from dataset.unlabeled_image_dataset import UnlabeledImageDataset
@@ -30,10 +25,6 @@ from models.linear_classifier import LinearClassifier
 from models.non_linear_classifier import NonLinearClassifier, TwoLayerClassifier
 from models.align_cbm import ConceptBottleneckModel
 from loss_func.multi_task_loss import MultiTaskLoss
-
-import time
-from datetime import datetime
-from utils.logger import Logger
 
 softmax = nn.Softmax(dim=1)
 
