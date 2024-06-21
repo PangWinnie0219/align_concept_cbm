@@ -1,6 +1,6 @@
 # Align_CBM
 
-(For MICCAI submission) A concept bottleneck model based framework with medical knowledge integration by loss_align.
+A concept bottleneck model based framework with medical knowledge integration by loss_align.
 
 ## Medical knowledge representation
 - WBC datasets: [`dataset_txt/pbc_alpha_true_11.csv`](https://github.com/PangWinnie0219/align_concept_cbm/blob/main/dataset_txt/pbc_alpha_true_11.csv)
