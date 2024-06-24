@@ -1,6 +1,19 @@
-# Align_CBM
+# Concept Alignment: Integrating Clinical Knowledge into CBMs
 
-A concept bottleneck model based framework with medical knowledge integration by loss_align.
+This is the Pytorch implementation for our paper:
+
+ - Winnie Pang, Xueyi Ke, Satoshi Tsutsui, and Bihan Wen. (2024). Concept Alignment: Integrating Clinical Knowledge into Concept Bottleneck Models. International Conference on Medical Image Computing and Computer Assisted Intervention. 
+
+
+![overview](https://github.com/PangWinnie0219/align_concept_cbm/blob/main/figs/overview.png)
+
+We propose a method to guide concept bottleneck models (CBMs) using knowledge aligned with clinicians' perspectives. 
+
+(a): CBMs predict interpretable concepts (e.g., granule color, cell shape, etc.) and then make a final prediction (e.g., eosinophil) based on them. During training, models usually do not consider the clinical importance of the concepts. Therefore, granule color and cell shape are treated equally despite granule color being a much more important factor for predicting eosinophil. 
+
+(b): To incorporate clinical knowledge, we enforce the CBM to exhibit a significant drop in cell type prediction probabilities when a clinically important concept is removed from the prediction. For instance, the predicted eosinophil probability should be lower when granule color, a key factor in recognizing eosinophil, is missing. 
+
+(c): Conversely, the cell type prediction probabilities should experience a negligible drop when a less clinically important concept is removed from the prediction. For instance, the eosinophil probability should not be affected much when cell shape, which is irrelevant to recognizing eosinophil, is missing.
 
 ## Medical knowledge representation
 - WBC datasets: [`dataset_txt/pbc_alpha_true_11.csv`](https://github.com/PangWinnie0219/align_concept_cbm/blob/main/dataset_txt/pbc_alpha_true_11.csv)
