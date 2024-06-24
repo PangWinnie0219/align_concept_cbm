@@ -15,6 +15,12 @@ We propose a method to guide concept bottleneck models (CBMs) using knowledge al
 
 (c): Conversely, the cell type prediction probabilities should experience a negligible drop when a less clinically important concept is removed from the prediction. For instance, the eosinophil probability should not be affected much when cell shape, which is irrelevant to recognizing eosinophil, is missing.
 
+## Environment
+
+Install the packages required using the requirements.txt file:
+
+ `pip install -r requirements.txt `
+
 ## Medical knowledge representation
 - WBC datasets: [`dataset_txt/pbc_alpha_true_11.csv`](https://github.com/PangWinnie0219/align_concept_cbm/blob/main/dataset_txt/pbc_alpha_true_11.csv)
 
@@ -43,3 +49,11 @@ Train and test the CBM with `loss_align`:
   `python train_test.py --lamda 1 --backbone vgg16 --classifier linear`
 
 - `--lamda 0` is the baseline without loss_align, `lamda` can be larger than 1. 
+
+## Acknowledgement
+
+Some parts of the code are adopted from [WBCAtt](https://github.com/apple2373/wbcatt). 
+
+
+## Citation
+``
