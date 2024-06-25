@@ -48,6 +48,7 @@ Train and test the CBM with `loss_align`:
   
   `python train_test.py --lamda 1 --backbone vgg16 --classifier linear`
 
+-  Check `python train_test.py --help` for arguments.
 - `--lamda 0` is the baseline without loss_align, `lamda` can be larger than 1. 
 
 ## Acknowledgement
