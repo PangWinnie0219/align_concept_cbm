@@ -1,4 +1,4 @@
-# Concept Alignment: Integrating Clinical Knowledge into CBMs
+# Integrating Clinical Knowledge into CBMs
 
 This is the Pytorch implementation for our paper:
 
