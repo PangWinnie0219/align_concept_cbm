@@ -2,7 +2,7 @@
 
 This is the Pytorch implementation for our paper:
 
- - Winnie Pang, Xueyi Ke, Satoshi Tsutsui, and Bihan Wen. (2024). Concept Alignment: Integrating Clinical Knowledge into Concept Bottleneck Models. International Conference on Medical Image Computing and Computer Assisted Intervention. 
+ - Winnie Pang, Xueyi Ke, Satoshi Tsutsui, and Bihan Wen. (2024). Integrating Clinical Knowledge into Concept Bottleneck Models. International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI). 
 
 
 ![overview](https://github.com/PangWinnie0219/align_concept_cbm/blob/main/figs/overview.png)
@@ -57,4 +57,16 @@ Some parts of the code are adopted from [WBCAtt](https://github.com/apple2373/wb
 
 
 ## Citation
-``
+
+If you find our code or paper useful, please cite as:
+
+```
+@inproceedings{pang2024integrating,
+  title={Integrating Clinical Knowledge into Concept Bottleneck Models},
+  author={Pang, Winnie and Ke, Xueyi and Tsutsui, Satoshi and Wen, Bihan},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)},
+  pages={},
+  year={2024},
+  organization={}
+}
+```
