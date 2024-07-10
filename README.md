@@ -65,8 +65,6 @@ If you find our code or paper useful, please cite as:
   title={Integrating Clinical Knowledge into Concept Bottleneck Models},
   author={Pang, Winnie and Ke, Xueyi and Tsutsui, Satoshi and Wen, Bihan},
   booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)},
-  pages={},
-  year={2024},
-  organization={}
+  year={2024}
 }
 ```
