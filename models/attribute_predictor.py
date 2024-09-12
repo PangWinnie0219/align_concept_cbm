@@ -14,11 +14,8 @@ class AttributePredictor(nn.Module):
         nn.init.zeros_(self.attribute_predictors.bias)
 
     def predict_from_features(self, x):
-        # if self.batch_predictors:
         outputs = self.attribute_predictors(x)
         outputs = list(torch.split(outputs, self.attribute_sizes, dim=1))
-        # else:
-        #     outputs = [predictor(x) for predictor in self.attribute_predictors]
         return outputs
 
     def extract_features(self, x):
