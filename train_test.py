@@ -86,7 +86,7 @@ def setup_args():
     parser.add_argument(
         "--att_label_test",
         nargs="*",
-        default=[True, True, False, False],
+        default=[True, False, False],
         help="Present of attribute annotations for test images, corresponding to each test file path",
     )
     parser.add_argument(
@@ -176,7 +176,7 @@ def setup_args():
     parser.add_argument(
         "--epochs",
         type=int,
-        default=100,
+        default=30,
         help="number of epochs",
     )
 
