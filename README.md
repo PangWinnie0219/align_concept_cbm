@@ -1,6 +1,6 @@
 # Integrating Clinical Knowledge into CBMs
 
-This is the Pytorch implementation for our paper:
+This is the Pytorch implementation for our [paper](https://arxiv.org/pdf/2407.06600):
 
  - Winnie Pang, Xueyi Ke, Satoshi Tsutsui, and Bihan Wen. (2024). Integrating Clinical Knowledge into Concept Bottleneck Models. International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI). 
 
@@ -15,11 +15,15 @@ We propose a method to guide concept bottleneck models (CBMs) using knowledge al
 
 (c): Conversely, the cell type prediction probabilities should experience a negligible drop when a less clinically important concept is removed from the prediction. For instance, the eosinophil probability should not be affected much when cell shape, which is irrelevant to recognizing eosinophil, is missing.
 
-## Environment
+## Installation
 
-Install the packages required using the requirements.txt file:
+1. Clone this repository adn move to the project working directory:
 
- `pip install -r requirements.txt `
+    `git clone https://github.com/PangWinnie0219/align_concept_cbm.git`
+
+2. Install the packages required using the requirements.txt file:
+
+    `pip install -r requirements.txt `
 
 ## Medical knowledge representation
 - WBC datasets: [`dataset_txt/pbc_alpha_true_11.csv`](https://github.com/PangWinnie0219/align_concept_cbm/blob/main/dataset_txt/pbc_alpha_true_11.csv)
@@ -27,7 +31,10 @@ Install the packages required using the requirements.txt file:
 - Skin datasets: [`skincon/dataset_txt/skincon_alpha_true_v3.csv`](https://github.com/PangWinnie0219/align_concept_cbm/blob/main/skincon/dataset_txt/skincon_alpha_true_v3.csv)
 
 ## Data preparation
-Prepare a `./data` directory that contains all images of the datasets:
+
+1. Download the images from [PBC dataset](https://data.mendeley.com/datasets/snkd93bnjr/1), [RaabinWBC](https://raabindata.com/free-data/), [scirep](https://www.nature.com/articles/s41598-023-29331-3), [Fitzpatrick 17k](https://github.com/mattgroh/fitzpatrick17k) and [DDI](https://ddi-dataset.github.io/index.html#paper).  
+
+2. Prepare a `./data` directory that contains all images of the datasets:
 
 ```
     - data
@@ -41,7 +48,7 @@ Prepare a `./data` directory that contains all images of the datasets:
         - ddi_images
  ```
 
-You may download the images from [PBC dataset](https://data.mendeley.com/datasets/snkd93bnjr/1), [RaabinWBC](https://raabindata.com/free-data/), [scirep](https://www.nature.com/articles/s41598-023-29331-3), [Fitzpatrick 17k](https://github.com/mattgroh/fitzpatrick17k), [DDI](https://ddi-dataset.github.io/index.html#paper) and concept annotations from [WBCAtt](https://rose1.ntu.edu.sg/dataset/WBCAtt/), [SkinCon](https://skincon-dataset.github.io/index.html#dataset).  
+ 
 
 ## Experiment
 
